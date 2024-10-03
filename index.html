@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="splash-screen"></div>
+      <div class="inner-container">
+        <div class="content">
+          <div class="header">
+            <ul>
+              <li class="logo">
+                <div class="icon"><img src="logo1.png" /></div>
+              </li>
+              <li class="brand">
+                <h3>REGIONS</h3>
+                <h4>Mortgage</h4>
+              </li>
+
+              <li class="enroll">
+                <p>Are you a new customer?</p>
+                <button class="enroll-btn">Enroll Now</button>
+              </li>
+            </ul>
+          </div>
+          <div class="enroll-box">
+            <h4>Enroll now to:</h4>
+            <ul>
+              <li>
+                <span><i class="bi bi-check-lg"></i></span>Access your loans
+                online
+              </li>
+              <li>
+                <span><i class="bi bi-check-lg"></i></span>Pay your mortgage
+                online
+              </li>
+              <li>
+                <span><i class="bi bi-check-lg"></i></span>View your mortgage
+                statements
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="intro">
+              <h1>Welcome Back</h1>
+              <p>Sign in to your Regions MyMortgage account.</p>
+            </div>
+            <form>
+              <input
+                type="text"
+                id="username"
+                placeholder="Online ID"
+                required
+              />
+              <!-- <label for="username">Online ID</label> -->
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+              <!-- <label for="password">Password</label> -->
+              <div class="wrapper">
+                <input type="checkbox" id="check" />
+                <!-- <label for="check">Remember me</label> -->
+              </div>
+              <input type="button" id="submit" value="Login" />
+            </form>
+
+            <div class="forgot">
+              <a>Forgot Online ID?</a>
+              <a>Forgot Password?</a>
+            </div>
+          </div>
+          <div class="footer">
+            <p>Equal Housing Lender<span>&#8231;</span>Member FDIC</p>
+            <p>
+              &copy;2023 Regions Financial Corporation. All Rights
+              Reserved.<span>&#8231;</span><a>1(800)REGIONS</a>
+            </p>
+          </div>
+        </div>
+        <div class="image"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
