@@ -14,7 +14,7 @@
     <div class="outer-container">
       <div class="splash-screen"></div>
       <div class="inner-container">
-        <div class="content">
+        <div class="content hidden">
           <div class="header">
             <ul>
               <li class="logo">
@@ -60,7 +60,7 @@
                 placeholder="Online ID"
                 required
               />
-              <!-- <label for="username">Online ID</label> -->
+              <label for="username" class="userLabel">Online ID</label>
               <input
                 type="password"
                 id="password"
@@ -68,12 +68,20 @@
                 placeholder="Password"
                 required
               />
-              <!-- <label for="password">Password</label> -->
-              <div class="wrapper">
-                <input type="checkbox" id="check" />
-                <!-- <label for="check">Remember me</label> -->
-              </div>
+              <label for="password" class="passLabel">Password</label>
+              <span type="checkbox" id="showPass">Show</span>
+              <!-- <div class="wrapper"> -->
+              <label for="check" class="container"
+                >Remember me
+
+                <input type="checkbox" id="check" checked="checked" />
+
+                <span class="checkmark"></span>
+              </label>
+
+              <!-- </div> -->
               <input type="button" id="submit" value="Login" />
+              <div class="loader"></div>
             </form>
 
             <div class="forgot">
@@ -89,7 +97,7 @@
             </p>
           </div>
         </div>
-        <div class="image"></div>
+        <div class="image hidden"></div>
       </div>
     </div>
     <script src="script.js"></script>
